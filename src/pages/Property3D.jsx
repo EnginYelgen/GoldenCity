@@ -12,10 +12,12 @@ function App() {
       }, 1000);
   }, []);
   return (
-    <div className="absolute z-50 inset-0 bg-white">
-      {loading ? 
-        <div className="absolute z-50 inset-0 w-full h-full flex justify-center items-center text-primary-700 text-xl md:text-3xl text-center font-bold ">Please wait...</div> 
-      : null}
+    <div className="absolute inset-0 z-50 bg-white dark:bg-secondary-900 transition-colors duration-300">
+      {loading ? (
+        <div className="absolute inset-0 z-50 flex h-full w-full items-center justify-center text-primary-700 dark:text-primary-300 text-xl md:text-3xl text-center font-bold">
+          Please wait...
+        </div>
+      ) : null}
       <Leva hidden />
       <Overlay />
       <Canvas shadows camera={{ position: [0, 0, 5], fov: 30 }}>
