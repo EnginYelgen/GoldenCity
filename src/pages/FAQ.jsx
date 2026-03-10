@@ -5,7 +5,7 @@ import FaqAccordion from '../components/common/FaqAccordion'
 
 function FAQ() {
   const faqSections = [
-    // mevcut faqSections içeriğini BURAYA aynen taşı
+    // copy the existing faqSections content from the previous implementation into this array
   ]
 
   return (
